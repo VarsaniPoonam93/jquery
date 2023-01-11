@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replase in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <style>
+      h1,p{
+  font-size: 30px;
+      }
+      button{
+        padding: 10px 20px;
+        background-color: black;
+        color: #fff;
+      }
+    </style>
+</head>
+<body>
+  <h1>
+    Poonam
+  </h1> 
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, iusto</p> 
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, iusto</p> 
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, iusto</p> 
+  <button id="replase">click</button>
+  <button id="click">click</button>
+  <script>
+    $('#replase').click(function(){
+      $('<img src="../dog psd/img/dog1.png" alt="">').replaceAll('h1')
+    })
+    $("#click").click(function(){
+      $('<h3>Reeva</h3>').replaceAll('p')
+    })
+
+  </script>
+</body>
+</html>

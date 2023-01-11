@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggleclass in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <style>
+        #box{
+             width: 1100px;
+             margin: 0 auto;
+             border: 5px solid black;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu{
+  font-size: 25px;
+  
+
+        }
+        .menu ul li{
+            display: inline-block;
+        }
+        .menu ul li a{
+            text-decoration: none;
+            padding: 0 10px;
+            color: rgb(46, 29, 29);
+            font-weight: bold;
+        }
+        .justy{
+            justify-content: center;
+            margin: 5px 5px;
+            
+        }
+        .btn{
+        text-align: center;
+        margin: 20px 0;
+        }
+        .btn button{
+            padding: 5px 25px;
+            border: 3px solid;
+            background-color: gray;
+            font-size: 20px ;
+        }
+        .tog{
+            background-color: brown;
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="row justy">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                
+
+            </ul>
+        </div>
+        </div>
+    </div> 
+    <div class="btn">
+    <button id="addclass">click</button>
+    <button id="removeclass">click</button>
+    <button id="toggleclass">click</button>
+    </div>
+    <script>
+        $("#addclass").click(function(){
+         $('a').addClass('tog')
+        });
+        $("#removeclass").click(function(){
+            $('a').removeClass('tog')
+        });
+        $("#toggleclass").click(function(){
+            $('a').toggleClass('tog')
+        })
+    </script>
+</body>
+</html>

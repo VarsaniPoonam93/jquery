@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty injquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <style>
+   #box{
+    width: 500px;
+    height: 400px;
+    /* margin: 0 auto; */
+    border: 2px solid brown;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-size:25px;
+    text-align: center;
+    font-weight: bold;
+
+}
+button{
+    padding: 10px 20px;
+    background-color: gray;
+    color: antiquewhite;
+    margin: 10px 0;
+    
+}
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Empty in jquery</h1>
+        <h2>Poonam</h2>
+        <h3>Reeva</h3>
+        <h4>Creeva</h4>
+        <h5>Greeva</h5>
+        </div>
+        <button id="btn"> Empty</button>
+        <button id="empty"> Reeva</button>
+        <script>
+$("#btn").click(function() {
+    $('#box').empty()
+})
+$("#empty").click(function(){
+    $('h3').empty()
+})
+
+        </script>
+</body>
+</html>

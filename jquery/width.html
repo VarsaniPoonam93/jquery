@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<style>
+    div{
+        width: 60px;
+        float: left;
+        height: 80px;
+        margin: 5px;
+        cursor: pointer;
+        background-color: black;
+
+    }
+</style>
+
+</head>
+<body>
+  <div></div> 
+<div></div> 
+<div></div> 
+<div></div> 
+<div></div>
+<script>
+    $("div").one("click",function(){
+        $(this).width (20).css({
+            cursor:"auto",
+            backgroundColor: "navy",
+            
+
+        });
+    });
+</script> 
+</body>
+</html>

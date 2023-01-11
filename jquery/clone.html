@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clone in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <style>
+h1{
+    font-size: 50px;
+    color: gray;
+    font-weight: bold;
+    margin-left: 40px;
+}
+#img  img{
+   width: 50%; 
+   margin-left: 40px;
+    
+}
+
+p{
+    width: 50%;
+    /* margin: 0 auto; */
+    
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 40px;
+}
+button{
+    padding: 10px 20px;
+    margin-left: 100px;
+    
+}
+
+
+  </style>
+
+</head>
+<body>
+   <h1>poonam</h1> 
+   <div id="img">
+    <img src="./images.jpg" alt="">
+   </div>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti soluta amet molestias, veniam ipsa, sequi illo repellendus laboriosam architecto obcaecati error autem cum, distinctio a asperiores necessitatibus laudantium recusandae. Earum.</p>
+   <button id="clone">Clone</button>
+   <script>
+    $('#clone').click(function () {
+        $('h1').clone().appendTo('#img')
+    });
+    </script>
+</body>
+</html>

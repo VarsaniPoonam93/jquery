@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addclass in jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <style>
+        #box {
+            width: 500px;
+            margin: 0 auto;
+            border: 5px solid;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .img {
+            text-align: center;
+        }
+
+        button {
+
+            padding: 10px 25px;
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        .font {
+            font-size: 70px;
+            background-color: brown;
+            color: aliceblue;
+        }
+
+        p {
+            text-align: center;
+
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h1>jquery program</h1>
+        <p>This is a logo </p>
+        <div class="img">
+            <img src="../jquery/logo.png" alt="">
+        </div>
+    </div>
+    <button id="addclass">click</button>
+    <script>
+        $("#addclass").click(function () {
+            $('p').addClass('font')
+            $('h1').addClass('font')
+        })  
+    </script>
+</body>
+
+</html>
